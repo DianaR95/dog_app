@@ -51,9 +51,9 @@ def show_images(path: str = "images"):
 
 def show_specific_image(path: str = "images"):
     images_list = os.listdir(path)
+    breed_name = input("Introduceti imaginea dorita in functie de rasa animalului: ")
 
     for image_name in images_list:
-        breed_name = input("Introduceti imaginea dorita in functie de rasa animalului: ")
         breed_image = image_name.split("_")[1]
         if breed_name.lower() in breed_image.lower():
             relative_path = os.path.join(path, image_name)
