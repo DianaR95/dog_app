@@ -48,6 +48,6 @@ if __name__ == '__main__':
             add_image = img.get_dog_image_url(config['rest_api_url'])
             img.save_image(add_image)
         case "3":
-            pass
+            img.show_specific_image()
         case _:
             exit()
